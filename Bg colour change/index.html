@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			background: #81ecec;
+		}
+		div{
+			width: 25%; height: 50px;
+			display: flex;
+			justify-content: space-around;
+			padding: 10px;
+			background: white;
+		}
+		#a{  flex: 1; background: #e58e26; color: #e58e26; }
+		#b{  flex: 1; background: #b71540; color: #b71540; }
+		#c{  flex: 1; background: #0c2461; color: #0c2461; }
+		#d{  flex: 1; background: #78e08f; color: #78e08f; }
+		#e{  flex: 1; background: #fd79a8; color: #fd79a8; }
+
+	</style>
+</head>
+<body>
+
+	<div>
+		<a onclick="bgchange(id)" id="a">#e58e26</a>
+		<a onclick="bgchange(id)" id="b">#b71540</a>
+		<a onclick="bgchange(id)" id="c">#0c2461</a>
+		<a onclick="bgchange(id)" id="d">#78e08f</a>
+		<a onclick="bgchange(id)" id="e">#fd79a8</a>
+	</div>
+
+	<script>
+		
+		const bgchange = (id) => {
+			document.body.style.background = document.getElementById(id).innerHTML;
+		}
+
+	</script>
+
+</body>
+</html>
